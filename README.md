@@ -37,13 +37,16 @@ If you using docker, it's easy to work with Elastic stack and fluentd!
     cd /root/go/src/github.com/efkbook
     # git clone
     git clone https://github.com/efkbook/blog-sample
-    # database migration
-    make migrate/up
-    # build binary
-    make app/build
-    # running docker containers by `docker-compose up -d`
-    make run
-
+    
+    /* ERROR OCCURRED
+        # database migration
+        make migrate/up
+        # build binary
+        make app/build
+        # running docker containers by `docker-compose up -d`
+        make run
+    */
+    
 At the first time, `docker-compose` start creating containers. After starting containers, it's time to access Elasticsearch.
 
     $ curl http://localhost:9200
@@ -66,9 +69,7 @@ It works! And your Kibana console is also available on `http://localhost:5601`. 
 
 mkdir /root/go mkdir -p /root/go/src/github.com/efkbook
 cd /root/go/src/github.com/efkbook
-yum install git wget golang* docker* telnet
 yum install git wget golang* docker* telnet --skip-broken
-git clone git clone https://github.com/efkbook/blog-sample
 git clone https://github.com/efkbook/blog-sample
 service docker start
 ll
