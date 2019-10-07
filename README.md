@@ -63,6 +63,33 @@ At the first time, `docker-compose` start creating containers. After starting co
 
 It works! And your Kibana console is also available on `http://localhost:5601`. If Elasticsearch is accecible, blog application can start up.
 
+
+mkdir /root/go mkdir -p /root/go/src/github.com/efkbook
+cd /root/go/src/github.com/efkbook
+yum install git wget golang* docker* telnet
+yum install git wget golang* docker* telnet --skip-broken
+git clone git clone https://github.com/efkbook/blog-sample
+git clone https://github.com/efkbook/blog-sample
+service docker start
+ll
+cd /root/go/src/github.com/efkbook
+ll
+cd blog-sample/
+ll
+make migrate/up
+export GOPATH=/root/go
+go
+go env
+make migrate/up
+bg %1
+ make app/build
+bg %2
+jobs
+jobs
+ll
+jobs
+docker-compose up -d
+
 ## For contributor
 
 To start a blog application locally, you just `go run`
