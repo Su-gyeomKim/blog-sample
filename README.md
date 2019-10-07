@@ -89,6 +89,59 @@ jobs
 ll
 jobs
 docker-compose up -d
+WARNING: Image for service elasticsearch was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  binutils bzip2 cpp cpp-4.9 dpkg-dev g++ g++-4.9 gcc gcc-4.9 libasan1
+  libatomic1 libc-dev-bin libc6-dev libcilkrts5 libcloog-isl4 libcurl3
+  libcurl3-gnutls libdpkg-perl libgcc-4.9-dev libgdbm3 libgomp1
+  libgssapi-krb5-2 libidn11 libisl10 libitm1 libk5crypto3 libkeyutils1
+  libkrb5-3 libkrb5support0 libldap-2.4-2 liblsan0 libmpc3 libmpfr4
+  libquadmath0 librtmp1 libsasl2-2 libsasl2-modules-db libssh2-1 libssl1.0.0
+  libstdc++-4.9-dev libtimedate-perl libtsan0 libubsan0 linux-libc-dev make
+  openssl patch perl perl-modules xz-utils
+Suggested packages:
+  binutils-doc bzip2-doc cpp-doc gcc-4.9-locales debian-keyring g++-multilib
+  g++-4.9-multilib gcc-4.9-doc libstdc++6-4.9-dbg gcc-multilib manpages-dev
+  autoconf automake libtool flex bison gdb gcc-doc gcc-4.9-multilib
+  libgcc1-dbg libgomp1-dbg libitm1-dbg libatomic1-dbg libasan1-dbg
+  liblsan0-dbg libtsan0-dbg libubsan0-dbg libcilkrts5-dbg libquadmath0-dbg
+  glibc-doc libcurl4-doc libcurl3-dbg libgnutls28-dev libidn11-dev libkrb5-dev
+  libldap2-dev librtmp-dev libssh2-1-dev pkg-config zlib1g-dev krb5-doc
+  krb5-user libstdc++-4.9-doc make-doc ed diffutils-doc perl-doc
+  libterm-readline-gnu-perl libterm-readline-perl-perl libb-lint-perl
+  libcpanplus-dist-build-perl libcpanplus-perl libfile-checktree-perl
+  liblog-message-simple-perl liblog-message-perl libobject-accessor-perl
+Recommended packages:
+  fakeroot libalgorithm-merge-perl libfile-fcntllock-perl krb5-locales
+  libsasl2-modules netbase rename libarchive-extract-perl
+  libmodule-pluggable-perl libpod-latex-perl libterm-ui-perl
+  libtext-soundex-perl libcgi-pm-perl libmodule-build-perl
+  libpackage-constants-perl
+The following NEW packages will be installed:
+  binutils build-essential bzip2 ca-certificates cpp cpp-4.9 curl dpkg-dev g++
+  g++-4.9 gcc gcc-4.9 libasan1 libatomic1 libc-dev-bin libc6-dev libcilkrts5
+  libcloog-isl4 libcurl3 libcurl3-gnutls libcurl4-gnutls-dev libdpkg-perl
+  libgcc-4.9-dev libgdbm3 libgomp1 libgssapi-krb5-2 libidn11 libisl10 libitm1
+  libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libldap-2.4-2 liblsan0
+  libmpc3 libmpfr4 libquadmath0 librtmp1 libsasl2-2 libsasl2-modules-db
+  libssh2-1 libssl1.0.0 libstdc++-4.9-dev libtimedate-perl libtsan0 libubsan0
+  linux-libc-dev make openssl patch perl perl-modules sudo xz-utils
+0 upgraded, 55 newly installed, 0 to remove and 5 not upgraded.
+Need to get 53.9 MB of archives.
+After this operation, 183 MB of additional disk space will be used.
+
+debconf: delaying package configuration, since apt-utils is not installed
+
+Successfully built cabe78878d21
+WARNING: Image for service fluentd was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+
+Successfully built 4774f7ebacba
+WARNING: Image for service go was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+
 
 ## For contributor
 
